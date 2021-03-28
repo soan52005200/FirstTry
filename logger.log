@@ -1,0 +1,8 @@
+2021-03-29 01:05:39 ERROR Main:24 - java.lang.NullPointerException
+2021-03-29 01:13:51 ERROR Main:24 - java.lang.NullPointerException
+2021-03-29 01:15:18 ERROR Main:24 - java.lang.NullPointerException
+2021-03-29 01:17:58 ERROR Main:24 - java.lang.NullPointerException
+2021-03-29 01:20:26 ERROR Main:24 - java.lang.NullPointerException
+2021-03-29 01:53:31 ERROR Main:28 - java.io.FileNotFoundException: .\data\csv\order.csv (Системе не удается найти указанный путь)
+2021-03-29 01:54:17 ERROR Main:28 - java.io.FileNotFoundException: .\data\csv\order.csv (Системе не удается найти указанный путь)
+2021-03-29 01:55:23 ERROR Main:28 - java.lang.IllegalStateException: Both mapping strategy and CSVReader/Reader must be specified!
