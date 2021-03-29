@@ -6,3 +6,5 @@
 2021-03-29 01:53:31 ERROR Main:28 - java.io.FileNotFoundException: .\data\csv\order.csv (Системе не удается найти указанный путь)
 2021-03-29 01:54:17 ERROR Main:28 - java.io.FileNotFoundException: .\data\csv\order.csv (Системе не удается найти указанный путь)
 2021-03-29 01:55:23 ERROR Main:28 - java.lang.IllegalStateException: Both mapping strategy and CSVReader/Reader must be specified!
+2021-03-29 02:19:01 ERROR Main:28 - java.lang.IllegalStateException: Both mapping strategy and CSVReader/Reader must be specified!
+2021-03-29 02:19:47 ERROR Main:28 - java.lang.IllegalStateException: Both mapping strategy and CSVReader/Reader must be specified!

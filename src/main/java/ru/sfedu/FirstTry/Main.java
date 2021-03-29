@@ -22,7 +22,7 @@ public class Main {
         try {
             log.debug(System.getProperty(ENV_PROPERTIES));
             log.debug(System.getProperty(LOG4J2_PROPERTIES));
-            log.info(new CreateEmailMassage().GetServer(args[0]));
+            log.info(new CreateEmailMassage().getServer(args[0]));
 
         } catch (Exception exception) {
             log.error(exception);
