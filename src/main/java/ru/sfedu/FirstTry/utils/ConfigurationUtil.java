@@ -14,7 +14,6 @@ import java.util.Properties;
 import static ru.sfedu.FirstTry.Constants.*;
 
 
-
 /**
  * Configuration utility. Allows to get configuration properties from the
  * default configuration file

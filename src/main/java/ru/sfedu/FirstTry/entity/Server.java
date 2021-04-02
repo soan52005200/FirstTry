@@ -9,20 +9,20 @@ public class Server {
     @CsvBindByPosition(position = 1)
     private String name;
     @CsvBindByPosition(position = 2)
-    private Long ip;
+    private String ip;
     @CsvBindByPosition(position = 3)
     private String path;
 
-    public Server(Long id,String name,Long ip,String path){
+    public Server(Long id,String name,String ip,String path){
         this.id=id;
         this.name=name;
         this.ip=ip;
         this.path=path;
 
     }
-    
+
     public String getName(){
-        return this.name;
+        return name;
     }
 
 

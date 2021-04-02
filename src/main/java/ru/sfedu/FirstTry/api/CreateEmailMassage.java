@@ -1,34 +1,32 @@
 package ru.sfedu.FirstTry.api;
 
-
-import java.io.*;
-import java.util.List;
-import java.util.Optional;
-import com.opencsv.CSVReader;
-import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
-import ru.sfedu.FirstTry.entity.*;
+import ru.sfedu.FirstTry.entity.Server;
 
-import static ru.sfedu.FirstTry.Constants.*;
+import java.io.FileReader;
+import java.io.IOException;
+
+import static ru.sfedu.FirstTry.Constants.CSV_SERVER_KEY;
 import static ru.sfedu.FirstTry.utils.ConfigurationUtil.getConfigurationEntry;
-
 
 public class CreateEmailMassage {
 
     public CreateEmailMassage() {
     }
 
-    public <T> List<T> getServer(String cli) throws IOException {
-        List<T> result;
+    public Server getServerByName(String name) throws RuntimeException,IOException {
+        /**List<Server> servers = new CsvToBeanBuilder(new FileReader(getConfigurationEntry(CSV_SERVER_KEY))).withType(Server.class).build().parse();*/
+        FileReader fileReader=new FileReader(getConfigurationEntry(CSV_SERVER_KEY));
+        System.out.println(fileReader);
+        CsvToBeanBuilder csvToBeanBuilder = new CsvToBeanBuilder(fileReader);
+        System.out.println(csvToBeanBuilder);
+        csvToBeanBuilder.withType(Server.class);
+        System.out.println(csvToBeanBuilder);
+        csvToBeanBuilder.build();
+        System.out.println(csvToBeanBuilder);
 
-        CSVReader csvReader= new CSVReader(new FileReader(getConfigurationEntry(CSV_SERVER_KEY)));
-        CsvToBean<T> csvToBean =new CsvToBeanBuilder<T>(csvReader).withType(Server.class).build();
 
-        List<T> collection = csvToBean.parse();
-        csvReader.close();
-
-
-        return collection.stream().filter(o ->o.getName().equals(cli)).findFirst();
+        return null;
     }
 
 
