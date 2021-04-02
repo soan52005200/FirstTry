@@ -14,13 +14,14 @@ public class Main {
 
     private static final Logger log = LogManager.getLogger(Main.class);
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String args[]) throws IOException {
         System.out.println(getConfigurationEntry(CSV_SERVER_KEY));
 
         try {
             log.debug(System.getProperty(ENV_PROPERTIES));
             log.debug(System.getProperty(LOG4J2_PROPERTIES));
-            log.info(new CreateEmailMassage().getServerByName(args[0]));
+            System.out.println(new CreateEmailMassage(args[0]));
+
 
         } catch (Exception exception) {
             log.error(exception);
