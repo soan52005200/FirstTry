@@ -1,4 +1,5 @@
 package ru.sfedu.FirstTry.entity;
+
 import com.opencsv.bean.CsvBindByPosition;
 
 
@@ -11,12 +12,16 @@ public class Server {
     @CsvBindByPosition(position = 2)
     private String ip;
     @CsvBindByPosition(position = 3)
+    private int port;
+    @CsvBindByPosition(position = 4)
     private String path;
 
-    public Server(Long id,String name,String ip,String path){
+
+    public Server(Long id, String name,String ip, int port, String path){
         this.id=id;
         this.name=name;
         this.ip=ip;
+        this.port=port;
         this.path=path;
 
     }
@@ -39,6 +44,14 @@ public class Server {
 
     public String getIp() {
         return ip;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
     }
 
     public void setIp(String ip) {

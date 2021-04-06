@@ -20,7 +20,7 @@ public class Main {
         try {
             log.debug(System.getProperty(ENV_PROPERTIES));
             log.debug(System.getProperty(LOG4J2_PROPERTIES));
-            System.out.println(new CreateEmailMassage(args[0]));
+            new CreateEmailMassage(args[0]);
 
 
         } catch (Exception exception) {

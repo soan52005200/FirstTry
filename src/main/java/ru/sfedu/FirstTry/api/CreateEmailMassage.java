@@ -17,6 +17,7 @@ public class CreateEmailMassage {
 
     public CreateEmailMassage(String name) throws IOException {
         Server server = getServerByName(name);
+        new ServerConnect(server);
 
 
 
@@ -27,7 +28,7 @@ public class CreateEmailMassage {
 
         String line ="";
 
-        String[] found = new String[4];
+        String[] found=new String[4];
 
 
 
@@ -42,6 +43,8 @@ public class CreateEmailMassage {
                   found[1]=column[1];
                   found[2]=column[2];
                   found[3]=column[3];
+                  found[4]=column[4];
+
                 }
             }
         } catch (FileNotFoundException e){
@@ -50,5 +53,5 @@ public class CreateEmailMassage {
         e.printStackTrace();
     }
 
-        return new Server(Long.parseLong(found[0]),found[1],found[2],found[3]);
+        return new Server(Long.parseLong(found[0]),found[1], found[2], Integer.parseInt(found[3]),found[4]);
     }}
