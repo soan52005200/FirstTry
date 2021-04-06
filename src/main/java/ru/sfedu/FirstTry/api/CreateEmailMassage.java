@@ -43,7 +43,6 @@ public class CreateEmailMassage {
                   found[1]=column[1];
                   found[2]=column[2];
                   found[3]=column[3];
-                  found[4]=column[4];
 
                 }
             }
@@ -53,5 +52,5 @@ public class CreateEmailMassage {
         e.printStackTrace();
     }
 
-        return new Server(Long.parseLong(found[0]),found[1], found[2], Integer.parseInt(found[3]),found[4]);
+        return new Server(Long.parseLong(found[0]),found[1], found[2], Integer.parseInt(found[3]));
     }}

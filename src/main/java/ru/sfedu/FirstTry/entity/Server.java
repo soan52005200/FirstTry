@@ -13,16 +13,15 @@ public class Server {
     private String ip;
     @CsvBindByPosition(position = 3)
     private int port;
-    @CsvBindByPosition(position = 4)
-    private String path;
 
 
-    public Server(Long id, String name,String ip, int port, String path){
+
+    public Server(Long id, String name,String ip, int port){
         this.id=id;
         this.name=name;
         this.ip=ip;
         this.port=port;
-        this.path=path;
+
 
     }
 
@@ -58,11 +57,4 @@ public class Server {
         this.ip = ip;
     }
 
-    public String getPath() {
-        return path;
-    }
-
-    public void setPath(String path) {
-        this.path = path;
-    }
 }
