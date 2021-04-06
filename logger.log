@@ -69,3 +69,6 @@
 2021-04-02 21:08:16 ERROR Main:27 - java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
 2021-04-02 21:08:39 ERROR Main:27 - java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
 2021-04-02 21:08:49 INFO  Main:23 - ru.sfedu.FirstTry.entity.Server@5ace1ed4
+2021-04-06 19:09:44 ERROR Main:27 - java.lang.IllegalArgumentException: java.nio.charset.UnsupportedCharsetException: UTF_8
+2021-04-06 19:12:29 ERROR Main:26 - java.lang.IllegalArgumentException: java.nio.charset.UnsupportedCharsetException: UTF_8
+2021-04-06 19:12:54 ERROR Main:26 - java.lang.IllegalArgumentException: java.nio.charset.UnsupportedCharsetException: UTF_8

@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class ServerConnect {
     public ServerConnect(Server server) throws IOException {
         try {
-            var s = new Socket(server.getIp(), Math.toIntExact(server.getPort()));
+            var s = new Socket(server.getIp(), server.getPort());
 
             Scanner in = new Scanner(s.getInputStream(),"UTF_8");
             while (in.hasNextLine())
