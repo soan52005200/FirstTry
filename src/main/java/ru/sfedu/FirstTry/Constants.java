@@ -7,4 +7,5 @@ public class Constants {
     public static final String ENV_DEFAULT = "./src/main/resources/environment.properties";
 
     public static final String CSV_SERVER_KEY = "csvServer";
+    public static final String MESSAGE_KEY="messagePath";
 }
