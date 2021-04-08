@@ -2,8 +2,7 @@ package ru.sfedu.FirstTry.api;
 
 import ru.sfedu.FirstTry.entity.Server;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
 
@@ -13,8 +12,8 @@ import static ru.sfedu.FirstTry.utils.ConfigurationUtil.getConfigurationEntry;
 public class ServerConnect {
     public ServerConnect(Server server) throws IOException {
         try {
-            var s = new Socket(server.getIp(), server.getPort());
 
+            var s = new Socket(server.getIp(), server.getPort());
             Scanner in = new Scanner(s.getInputStream(),"UTF-8");
             while (in.hasNextLine())
             {
