@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import static ru.sfedu.FirstTry.Constants.MESSAGE_KEY;
 import static ru.sfedu.FirstTry.utils.ConfigurationUtil.getConfigurationEntry;
-
+//Производит подключение к серверу по данным из server.csv
 public class ServerConnect {
     public ServerConnect(Server server) throws IOException {
         try {
