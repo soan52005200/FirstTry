@@ -17,13 +17,11 @@ public class Main {
 
     public static void main(String args[]) throws IOException {
 
-        for (int server_number=1;server_number<=SERVERS_COUNT;server_number+=1) {
-
 
             try {
                 log.debug(System.getProperty(ENV_PROPERTIES));
                 log.debug(System.getProperty(LOG4J2_PROPERTIES));
-                new CreateEmailMassage(args[server_number]);
+                new CreateEmailMassage(args[0]);
 
 
             } catch (Exception exception) {
@@ -34,4 +32,3 @@ public class Main {
 
 
     }
-}

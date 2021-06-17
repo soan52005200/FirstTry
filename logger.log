@@ -74,3 +74,13 @@
 2021-04-06 19:12:54 ERROR Main:26 - java.lang.IllegalArgumentException: java.nio.charset.UnsupportedCharsetException: UTF_8
 2021-05-24 10:45:05 ERROR Main:26 - java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
 2021-05-24 10:45:36 ERROR Main:26 - java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+2021-06-17 15:32:40 ERROR Main:30 - java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+2021-06-17 15:32:40 ERROR Main:30 - java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 1
+2021-06-17 15:32:40 ERROR Main:30 - java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 1
+2021-06-17 15:32:40 ERROR Main:30 - java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 1
+2021-06-17 15:32:40 ERROR Main:30 - java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 1
+2021-06-17 15:32:40 ERROR Main:30 - java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 1
+2021-06-17 15:32:40 ERROR Main:30 - java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 1
+2021-06-17 15:32:40 ERROR Main:30 - java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 1
+2021-06-17 15:32:40 ERROR Main:30 - java.lang.ArrayIndexOutOfBoundsException: Index 9 out of bounds for length 1
+2021-06-17 15:32:40 ERROR Main:30 - java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 1

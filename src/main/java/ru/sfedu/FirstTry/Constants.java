@@ -8,5 +8,5 @@ public class Constants {
 
     public static final String CSV_SERVER_KEY = "csvServer";
     public static final String MESSAGE_KEY="messagePath";
-    public static final int SERVERS_COUNT=10;
+    public static final int SERVERS_COUNT=1;
 }
